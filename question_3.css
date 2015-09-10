@@ -1,0 +1,39 @@
+.main__col-small{
+	float:left;
+	width: 50px;
+	border-style: solid;
+	border-color: black;   
+	border-width: 0px; 
+}
+.main__col-medium{
+	float:left;
+	width:100px;
+	border-style: solid;
+    border-color: black;
+	border-width: 0px;     
+}
+.main__col-large{
+	float:left;
+	width: 200px;
+	border-style: solid;
+    border-color: black;
+	border-width: 0px;     
+}
+.row{
+	clear:both;
+	
+}
+@media (min-width: 500px) {
+	h1{
+		display:none;
+	}
+}
+@media (max-width: 500px) {
+   h1 {
+       display:block;
+    }
+
+	.main__col-large{
+		display:none;
+	}
+}

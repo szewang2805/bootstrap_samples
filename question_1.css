@@ -1,0 +1,14 @@
+.first{
+	color:Red;
+}
+.second{
+	color:green;
+}
+p.third{
+	color:blue;
+	font-size: 50px;
+}
+p.fourth{
+	color:grey;
+	font-size: 9px;
+}

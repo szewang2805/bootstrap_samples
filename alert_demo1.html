@@ -1,0 +1,36 @@
+<head>
+	<meta charset="UTF-8">
+</head>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<br>
+<div class="row">
+	<div class="col-md-6">
+		<div class="alert alert-success" role="alert">你已成功登入</div>
+		<div class="alert alert-info" role="alert">你已成功登入</div>
+		<div class="alert alert-warning" role="alert">用戶名稱及密碼不符</div>
+
+		<div class="alert alert-danger alert-dismissible" role="alert"> 
+		 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		 	<span aria-hidden="true">&times;</span></button>用戶名稱及密碼不符</div>
+ 
+		<div id="myAlert" class="alert alert-danger" role="alert"> 
+		Javascript -用戶名稱及密碼不符</div>
+	</div>
+</div>
+ <button type="button" class="close_alartbox" aria-label="Close">
+		 	<span aria-hidden="true">Close</span></button>
+
+
+<script>
+$(document).ready(function(){
+    $(".close_alartbox").click(function(){
+        $("#myAlert").alert("close");
+    });
+    
+    $('#myAlert').on('closed.bs.alert', function () {
+	 alert('Alert Box Closed');
+	})
+});
+</script>

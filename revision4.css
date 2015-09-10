@@ -1,0 +1,18 @@
+p.mainpage__first-title{
+	font-size: 28px;
+	color: red;
+}
+p.mainpage__second-title{
+	font-size: 28px;
+	color: blue;
+}
+p.mainpage__third-title{
+	font-size: 40px;
+	color: orange;
+}
+table, td, th
+  {
+  border:1px solid green;
+  width:200px;
+   border-collapse:collapse;
+  }

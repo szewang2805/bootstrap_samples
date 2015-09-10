@@ -1,0 +1,35 @@
+.main__col-large{
+	
+	width: 300px;
+	border-style: solid;
+    border-color: black;
+	border-width: 1px;
+	background-color: blue;
+	height:300px;     
+}
+.row{
+	clear:both;
+	
+}
+
+@media (max-width: 600px) {
+
+	.main__col-large{
+		
+		background-color: red;
+	}
+}
+@media (min-width: 601px) &&  (max-width: 1000px)  {
+
+	.main__col-large{
+	 float:left;	
+	}
+}
+@media (min-width: 1001px)  {
+
+	.main__col-large{
+	 float:left;
+	 color:white;
+	 background-color: green;
+	}
+}

@@ -1,0 +1,13 @@
+.main__left-col-float{
+float:left;
+width: 30%;
+    
+}
+.main__right-col-float{
+	float:left;
+	width: 30%;
+}
+.row{
+	clear:both;
+	width:100%;
+}
