@@ -1,6 +1,7 @@
-<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 <head>
 	<meta charset="UTF-8">
 </head>
@@ -8,14 +9,12 @@
 <input type = "button" id = "clickme" value="Click me!"/>
 <div id = "alert_placeholder"></div>
 <script>
-bootstrap_alert = function() {}
-bootstrap_alert.warning = function(message) {
-            $('#alert_placeholder').html('<div class="alert alert-warning">
-            	<a class="close" data-dismiss="alert">×</a>
-            	<span>'+message+'</span></div>')
-        }
+
+ function bootstrap_alert(message) {
+        $('#alert_placeholder').html('<div class="alert alert-warning" role="alert">'+message+'</div>');
+ }
 
 $('#clickme').on('click', function() {
-            bootstrap_alert.warning('Your text goes here');
+     bootstrap_alert('Your text goes here');
 });
 </script>​

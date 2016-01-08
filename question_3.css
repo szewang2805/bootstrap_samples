@@ -3,24 +3,25 @@
 	width: 50px;
 	border-style: solid;
 	border-color: black;   
-	border-width: 0px; 
+	border-width: 1px; 
 }
 .main__col-medium{
 	float:left;
-	width:100px;
+	width:98px;
 	border-style: solid;
     border-color: black;
-	border-width: 0px;     
+	border-width: 1px;     
 }
 .main__col-large{
 	float:left;
 	width: 200px;
 	border-style: solid;
     border-color: black;
-	border-width: 0px;     
+	border-width: 1px;     
 }
 .row{
 	clear:both;
+
 	
 }
 @media (min-width: 500px) {
